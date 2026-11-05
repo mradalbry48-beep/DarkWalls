@@ -1,15 +1,29 @@
 
-# DarkWalls 🖤
 
-تطبيق أندرويد احترافي للخلفيات.
 
-## المميزات
-- خلفيات ثابتة عالية الجودة.
-- خلفيات متحركة Live Wallpapers.
-- تصنيفات متنوعة.
-- تنزيل الخلفيات.
-- قائمة المفضلة.
-- تعيين الخلفيات على شاشة الهاتف.
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-## الإصدار
-1.0
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+
+    <application
+        android:allowBackup="true"
+        android:label="DarkWalls"
+        android:theme="@android:style/Theme.Material.Light.NoActionBar"
+        android:usesCleartextTraffic="false">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>
